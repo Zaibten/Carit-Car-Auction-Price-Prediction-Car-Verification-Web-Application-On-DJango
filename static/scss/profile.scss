@@ -1,0 +1,251 @@
+@import "_init";
+
+.profile {
+	@include container;
+	display: grid;
+	grid-template-columns: 1fr;
+	padding-top: 120px;
+	min-height: 100vh;
+	width: 100%;
+	main{
+		.user{
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			gap: 15px;
+			.user-info{
+				padding: 10px;
+				width: 40%;
+				border-radius: 10px;
+				background-color: $box-bg;
+				.image{
+					width: 200px;
+					height: 200px;
+					img{
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						border-radius: 5px;
+					}
+				}
+				.info{
+					padding: 10px;
+					display: flex;
+					flex-direction: row;
+					gap: 20px;
+					p{
+						margin-bottom: 10px;
+					}
+					.name{
+						font-size: 20px;
+						font-weight: bold;
+						margin-top: 5px;
+					}
+					.email, .phone, .locaion{
+						font-size: 13px;
+						font-weight: 600;
+						color: $font-color-secondary;
+					}
+				}
+			}
+			.auction-info{
+				width: 60%;
+				background-color: $box-bg;
+				border-radius: 10px;
+				display: flex;
+				flex-direction: column;
+				grid-gap: 10px;
+				padding: 10px;
+				.info-cards{
+					display: flex;
+					flex-direction: row;
+					gap: 10px;
+					width: 100%;
+					.auction-posts{
+						background-color: #EDFF81;
+						padding: 20px 20px;
+						width: 100%;
+						border-radius: 10px;
+					}
+					.auction-wins{
+						background-color: #9EFFA8;
+						padding: 20px 20px;
+						width: 100%;
+						border-radius: 10px;
+					}
+					.auction-loss{
+						background-color: #FFC2B5;
+						padding: 20px 20px;
+						width: 100%;
+						border-radius: 10px;
+					}
+				}
+				.recent-threads{
+					padding: 0px 5px;
+					.recent-threads-list{
+						width: 100%;
+						height: 360px;
+						display: flex;
+						justify-content: flex-start;
+						align-items: flex-start;
+						flex-direction: column;
+						overflow-y: scroll;
+						overflow-x: hidden;
+						padding-right: 5px;
+					}
+					.count{
+						font-size: 55px;
+						color: $font-color-primary;
+					}
+					.count-name{
+						font-weight: 600;
+						color: $font-color-primary;
+						text-align: center;
+					}
+				}
+			}
+		}
+		.add-car{
+			margin-top: 15px;
+			margin-bottom: 15px;
+			a{
+				color: $font-color-primary;
+				font-weight: 600px;
+				padding: 10px 15px;
+				border-radius: 10px;
+				margin-left: 10px;
+				background-color: $brand-color-secondary;
+				&:hover{
+					background-color: $brand-color;
+				}
+			}
+		}
+	}
+	form{
+		padding: 40px;
+		background-color: #f4f4f4;
+		border-radius: 10px;
+		width: 100%;
+		#end-at{
+			padding-left: 60px;
+		}
+		label{
+			position: relative;
+			top: 28px;
+			left: 10px;
+			color: $font-color-secondary;
+			transition: .3s;
+			font-weight: 500;
+			font-size: 15px;
+		}
+		#exterior-images, #interior-images{
+			padding-left: 120px;
+		}
+		input, select{
+			width: 100%;
+			padding: 10px 10px;
+			border-radius: 10px;
+			border: none;
+			background-color: white;
+			font-size: 15px;
+			font-weight: 500;
+			&:focus{
+				outline: none;
+			}
+		}
+		select{
+			margin-top: 15px;
+		}
+		.inner-container{
+			@include flex();
+			gap: 20px;
+			width: 100%;
+			margin-bottom: 15px;
+			margin-top: -10px;
+			.left,.middle, .right{
+				width: 100%;
+				margin: 10px 0px;
+			}
+		}
+		.bottom{
+			width: 100%;
+			margin: 10px 0px;
+			textarea{
+				width: 100%;
+				height: 200px;
+				padding: 10px 10px;
+				border-radius: 10px;
+				border: none;
+				background-color: white;
+				font-size: 15px;
+				font-weight: 500;
+				&:focus{
+					outline: none;
+				}
+			}
+			select{
+				margin-top: 15px;
+			}
+		}
+		button{
+			margin-top: 15px;
+			padding: 10px;
+			background-color: $brand-color;
+			color: $font-color-primary;
+			font-weight: 700;
+			border-radius: 10px;
+			border: none;
+			cursor: pointer;
+			font-size: 15px;
+			&:hover{
+				color: $font-color-secondary;
+			}
+			&:focus{
+				outline: none;
+			}
+		}
+	}
+	.lds-ring {
+		display: inline-block;
+		position: relative;
+		width: 27px;
+		height: 14px;
+	}
+	.lds-ring div {
+		box-sizing: border-box;
+		display: block;
+		position: absolute;
+		width: 18px;
+		height: 18px;
+		margin: 0px;
+		margin-left: 4px;
+		border: 2px solid $brand-color;
+		border-radius: 50%;
+		animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+		border-color: $brand-color-secondary transparent transparent transparent;
+	}
+	.lds-ring div:nth-child(1) {
+		animation-delay: -0.45s;
+	}
+	.lds-ring div:nth-child(2) {
+		animation-delay: -0.3s;
+	}
+	.lds-ring div:nth-child(3) {
+		animation-delay: -0.15s;
+	}
+	@keyframes lds-ring {
+		0% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+	
+}
+.hide{
+	display: none;
+}
+.user-update-form{
+	padding: 10px!important;
+}

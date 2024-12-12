@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Satisfy&display=swap");
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.profile {
+  width: 100%;
+  max-width: 1540px;
+  margin: auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 120px;
+  min-height: 100vh;
+  width: 100%;
+}
+.profile main .user {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.profile main .user .user-info {
+  padding: 10px;
+  width: 40%;
+  border-radius: 10px;
+  background-color: #F3F3F3;
+}
+.profile main .user .user-info .image {
+  width: 200px;
+  height: 200px;
+}
+.profile main .user .user-info .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.profile main .user .user-info .info {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.profile main .user .user-info .info p {
+  margin-bottom: 10px;
+}
+.profile main .user .user-info .info .name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.profile main .user .user-info .info .email, .profile main .user .user-info .info .phone, .profile main .user .user-info .info .locaion {
+  font-size: 13px;
+  font-weight: 600;
+  color: #636363;
+}
+.profile main .user .auction-info {
+  width: 60%;
+  background-color: #F3F3F3;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  padding: 10px;
+}
+.profile main .user .auction-info .info-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+}
+.profile main .user .auction-info .info-cards .auction-posts {
+  background-color: #EDFF81;
+  padding: 20px 20px;
+  width: 100%;
+  border-radius: 10px;
+}
+.profile main .user .auction-info .info-cards .auction-wins {
+  background-color: #9EFFA8;
+  padding: 20px 20px;
+  width: 100%;
+  border-radius: 10px;
+}
+.profile main .user .auction-info .info-cards .auction-loss {
+  background-color: #FFC2B5;
+  padding: 20px 20px;
+  width: 100%;
+  border-radius: 10px;
+}
+.profile main .user .auction-info .recent-threads {
+  padding: 0px 5px;
+}
+.profile main .user .auction-info .recent-threads .recent-threads-list {
+  width: 100%;
+  height: 360px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-right: 5px;
+}
+.profile main .user .auction-info .recent-threads .count {
+  font-size: 55px;
+  color: #262626;
+}
+.profile main .user .auction-info .recent-threads .count-name {
+  font-weight: 600;
+  color: #262626;
+  text-align: center;
+}
+.profile main .add-car {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.profile main .add-car a {
+  color: #262626;
+  font-weight: 600px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-left: 10px;
+  background-color: #dbdbdb;
+}
+.profile main .add-car a:hover {
+  background-color: #70696a49;
+}
+.profile form {
+  padding: 40px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  width: 100%;
+}
+.profile form #end-at {
+  padding-left: 60px;
+}
+.profile form label {
+  position: relative;
+  top: 28px;
+  left: 10px;
+  color: #636363;
+  transition: 0.3s;
+  font-weight: 500;
+  font-size: 15px;
+}
+.profile form #exterior-images, .profile form #interior-images {
+  padding-left: 120px;
+}
+.profile form input, .profile form select {
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+.profile form input:focus, .profile form select:focus {
+  outline: none;
+}
+.profile form select {
+  margin-top: 15px;
+}
+.profile form .inner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: -10px;
+}
+.profile form .inner-container .left, .profile form .inner-container .middle, .profile form .inner-container .right {
+  width: 100%;
+  margin: 10px 0px;
+}
+.profile form .bottom {
+  width: 100%;
+  margin: 10px 0px;
+}
+.profile form .bottom textarea {
+  width: 100%;
+  height: 200px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+.profile form .bottom textarea:focus {
+  outline: none;
+}
+.profile form .bottom select {
+  margin-top: 15px;
+}
+.profile form button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #70696a49;
+  color: #262626;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+.profile form button:hover {
+  color: #636363;
+}
+.profile form button:focus {
+  outline: none;
+}
+.profile .lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 27px;
+  height: 14px;
+}
+.profile .lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  margin: 0px;
+  margin-left: 4px;
+  border: 2px solid #70696a49;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #dbdbdb transparent transparent transparent;
+}
+.profile .lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.profile .lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.profile .lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.user-update-form {
+  padding: 10px !important;
+}
+
+/*# sourceMappingURL=profile.css.map */

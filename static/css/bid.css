@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Satisfy&display=swap");
+::-  {
+  width: 10px;
+  background-color: white;
+}
+
+::- -thumb {
+  border-radius: 20px;
+  background-color: #dbdbdb;
+}
+::- -thumb:hover {
+  background-color: #70696a49;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.bid {
+  width: 100%;
+  max-width: 1540px;
+  margin: auto;
+  padding: 0 40px;
+  padding-top: 120px;
+  height: fit-content;
+  width: 100%;
+}
+.bid main .bid-des {
+  min-height: calc(100vh - 400px);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 40px;
+}
+.bid main .car-info {
+  flex: 2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 15px;
+  min-height: 300px;
+}
+.bid main .car-info .car-image {
+  width: 500px;
+  height: 250px;
+}
+.bid main .car-info .car-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.bid main .car-info .info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+  gap: 10px;
+}
+.bid main .car-info .ends-in {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: crimson;
+  color: white;
+  width: fit-content;
+}
+.bid main .bid-info {
+  flex: 1.5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+  min-height: 200px;
+  background-color: #ebebeb;
+  border-radius: 10px;
+  padding: 10px;
+  color: #262626;
+}
+.bid main .bid-info h4 {
+  margin-bottom: -15px;
+}
+.bid main .bid-info h1 {
+  font-size: 50px;
+  color: #000000;
+  text-shadow: 2px 2px 2px rgba(112, 105, 106, 0.6);
+}
+.bid main .bid-info button {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  border: 2px solid #70696a49;
+  border-radius: 5px;
+}
+.bid main .bid-info button:hover {
+  color: white;
+  background-color: #70696a49;
+  cursor: pointer;
+}
+.bid main .bid-info .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+}
+.bid main .bid-info .place-bid-btn {
+  background-color: #70696a49;
+}
+.bid main .bid-info .selected {
+  background-color: #70696a49;
+}
+
+/*# sourceMappingURL=bid.css.map */
